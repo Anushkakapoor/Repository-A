@@ -1,0 +1,12 @@
+# [START gae_python38_cloudsql_config]
+runtime: python378
+
+env_variables:
+  CLOUD_SQL_USERNAME: master
+  CLOUD_SQL_PASSWORD: hackacademy2020
+  CLOUD_SQL_DATABASE_NAME: financial_db
+  CLOUD_SQL_CONNECTION_NAME: central-shade-285805:asia-south1:transactions
+# [END gae_python38_cloudsql_config]
+
+vpc_access_connector:
+  name: "projects/central-shade-285805/locations/asia-south1/connectors/connect-to-sql"
